@@ -98,3 +98,51 @@ nav ul a li:hover
     height: 6px;
     background-color: #323746;
 }
+
+.bottom-line-phone {
+    width: 1020px;
+    height: 15px;
+    background-color: #ea676b;
+}
+
+#main-phone {
+    width: 1020px;
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f06c64;
+}
+
+.right-chevron img{
+    transform: rotateY(180deg);
+}
+
+.left-chevron {
+    padding: 0px 0px 8px 14px;
+    transition: transform 1s ease-in-out;
+}
+
+.left-phone{
+    background-image: url("assets/shadow-vertical.png");
+    background-repeat: no-repeat;
+    padding: 0 16px 6px 0px;
+}
+
+.right-phone{
+    background-image: url("assets/shadow-horizontal.png");
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    padding: 0 0px 8px;
+}
+
+.right-chevron {
+    padding: 0px 12px 6px 0px;
+    transition: transform 1s ease-in-out;
+}
+
+.left-chevron:hover, 
+.right-chevron:hover {
+    transform: scale(1.5);
+}
