@@ -9,18 +9,17 @@ body {
     font-size: 26px;
     line-height: 6px;
     color: #ffffff;
-    font-family: "Lato", sans-serif;;
+    font-family: 'Lato', sans-serif;;
     font-weight: 500;
     text-align: left; 
     text-transform: uppercase;
-    font-stretch: extra-condensed;
-    letter-spacing: 1.8px;
 }
 
 #logo {    
-    margin: 15px 0 0 38px;
-    padding-top: 2px;
-
+    margin: 13px 0 0 39px;
+    padding-top: 2px;    
+    font-stretch: extra-condensed;
+    letter-spacing: -1px;
 }
 
 #logo span {
@@ -44,21 +43,19 @@ nav{
 nav ul {
     padding: 0px;
     margin-right: 40px;
-    margin-left: 448px;
+    margin-left: 450px;
 }
 
 nav ul li {
     font-size: 12px;
     line-height: 6px;
     color: #ffffff;
-    font-family: "Lato", sans-serif;
+    font-family: 'Lato', sans-serif;
     font-weight: 500;
     text-align: left;
     list-style-type: circle;
     display: inline;
     text-transform: uppercase;
-    font-stretch: unset;
-    letter-spacing: -0.38px;
 }
 
 nav ul a:first-child li {
@@ -66,14 +63,14 @@ nav ul a:first-child li {
 }
 
 nav ul a:not(:last-child) li{
-    padding-right: 10px;
+    padding-right: 11px;
 }
 
-nav ul a:nth-child(4) li,
+/*nav ul a:nth-child(4) li,
 nav ul a:last-child li
 {
     padding-left: 4px;
-}
+}*/
 
 
 nav ul a:not(:first-child) li::before {
@@ -145,4 +142,97 @@ nav ul a li:hover
 .left-chevron:hover, 
 .right-chevron:hover {
     transform: scale(1.5);
+}
+
+#articales {
+    width: 1020px;
+    height: 495px;
+    background-color: #f2f2f2;
+    margin-top: -15px;
+    padding-top: 44px;
+}
+#articales * {
+    background-color: #f2f2f2;
+}
+
+h1 {
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: 'Lato';
+    font-weight: 900;
+    text-align: left;
+    padding-left: 40px;
+    letter-spacing: 0px;
+}
+
+.our-services {
+    width: 940px;
+    height: 57px;
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    font-family: 'Lato';
+    font-weight: 300;
+    text-align: left;    
+    padding-left: 40px;
+}
+
+.our-services p {    
+    letter-spacing: 0px;
+}
+
+#articles-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 30px 0 30px;
+}
+
+#articles-list article {
+    display: flex;
+    flex-direction: row;
+}
+
+#articles-list article div,
+#articles-list article div p:nth-of-type(2) {
+    display: inline-block;
+    height: auto;
+}
+
+#articles-list article div:first-child {
+    margin-right: 20px;
+}
+
+.title-article {
+    font-size: 18px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: 'Lato';
+    font-weight: 900;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.self-article {
+    width: 219px;
+    height: 128px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: 'Lato';
+    font-weight: 400;
+    text-align: left;
+    margin: 0 0 30px;
+    text-align: justify;
+    word-wrap: break-word;
+    letter-spacing: -0.1px;
+}
+
+.bottom-line {
+    width: 1020px;
+    height: 6px;
+    background-color: #ffffff;
 }
