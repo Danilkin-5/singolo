@@ -101,7 +101,11 @@ footer {
     margin: 0px;
 }
 
-.contact-info .text-info {
+.contact-block {
+    margin-top: 23px;
+}
+
+.contact-info .text-info{
     width: 300px;
     height: 85px;
     padding-top: 10px;
@@ -113,4 +117,56 @@ footer {
     text-align: left;
     text-align: justify;
     letter-spacing: -0.5px;
+}
+
+.contact-block .contact {
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+    font-family: 'Lato';
+    font-weight: 400; 
+    padding-left: 23px;
+}
+
+.contact-block .location {
+    background: url("assets/location.png") no-repeat 100% 100%;
+    background-position: left center;
+}
+
+.contact-block .phone {
+    background: url("assets/phone_2.png") no-repeat 100% 100%;
+    background-position: left center;
+}
+
+.contact-block .mail {
+    background: url("assets/mail.png") no-repeat 100% 100%;
+    background-position: left center;
+}
+
+footer p{
+    margin: 0px;
+}
+
+#copyright {
+    padding-top: 27px;
+    padding-left: 41px;
+    font-size: 12px;
+    line-height: 22px;
+    color: #666d89;
+    font-family: 'Lato';
+    font-weight: 400; 
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 81% 19%;
+}
+
+footer .social-links {
+    padding-top: 22px;
+    padding-left: 3px;
+}
+
+.social-links > a {
+    margin-right: 4px;
 }
