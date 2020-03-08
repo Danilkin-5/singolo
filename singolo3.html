@@ -16,10 +16,11 @@
         <div class="data-block">
             <div id="form">
                 <form action="" method="">
-                    <input type="text" name="name" value="Name (Required)">
-                    <input type="email" name="email" value="Email (Required)">
-                    <input type="text" name="subject" value="Subject">
-                    <input type="text" name="describe" value="Describe your project in detail...">
+                    <input type="text" name="name" value="Name (Required)" placeholder="Name (Required)" pattern="[-a-z0-9!#$%&'*+/=?^_`{|}~]+(\.[-a-z0-9!#$%&'*+/=?^_`{|}~]+)*" required>
+                    <input type="email" name="email" value="Email (Required)" placeholder="Email (Required)" pattern="^[-a-z0-9!#$%&'*+/=?^_`{|}~]+(?:\.[-a-z0-9!#$%&'*+/=?^_`{|}~]+)*@(?:[a-z0-9]([-a-z0-9]{0,61}[a-z0-9])?\.)*(?:aero|arpa|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|tel|travel|[a-z][a-z])$" required >
+                    <input type="text" name="subject" value="Subject" placeholder="Subject">
+                    <input type="text" name="describe" value="Describe your project in detail..." placeholder="Describe your project in detail...">
+                    <input type="submit" value="Submit" placeholder="Submit">
                 </form>
             </div>
             <div class="contacts">
@@ -34,14 +35,18 @@
                         </p>
                     </div>
                     <div class="contact phone">
-                        <p>
-                            03528 331 86 35
-                        </p>
+                        <a href="tel:03528 331 86 35">
+                            <p>
+                                03528 331 86 35
+                            </p>
+                        </a>
                     </div>
                     <div class="contact mail">
-                        <p>
-                            info@singolo.com
-                        </p>
+                        <a href="mailto:info@singolo.com">
+                            <p>
+                                info@singolo.com
+                            </p>
+                        </a>
                     </div>
                 </div>
             </div>  
