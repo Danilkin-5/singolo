@@ -3,6 +3,10 @@ body {
     min-width: 1020px;
     margin: 0 auto;
 }
+@font-face {
+    font-family: Lato;
+    src: url(assets/Lato-Regular.ttf);
+}
 
 /*Singolo 1*/
 
@@ -182,6 +186,7 @@ h1 {
 
 .our-services p {    
     letter-spacing: 0px;
+    text-align: justify;
 }
 
 #articles-list {
@@ -312,9 +317,9 @@ section {
     color: #767e9e;
     font-family: 'Lato';
     font-weight: 300;
-    text-align: left;
     margin-left: 41px;
     padding-top: 28px;
+    text-align: justify;
 }
 .buttons > div {
     flex: 0 1 auto;
@@ -481,7 +486,7 @@ footer {
     color: #f0d8d9;
     font-family: 'Lato';
     font-weight: 300;
-    text-align: left;
+    text-align: justify;
 }
 
 .get-a-quote > p{
