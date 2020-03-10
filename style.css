@@ -422,6 +422,8 @@ section {
     font-family: 'Lato';
     font-weight: 900;
     text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .text .bio-description {
@@ -432,6 +434,8 @@ section {
     font-family: 'Lato';
     font-weight: 400;
     text-align: left;
+    height: 44px;
+    overflow: hidden;
 }
 
 .social-links {
