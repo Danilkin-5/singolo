@@ -53,18 +53,30 @@ window.addEventListener("load", function(event) {
         event.stopPropagation();
         event.preventDefault();
         var name = document.getElementById("name");
-        var emai = document.getElementById("email");
+        var email = document.getElementById("email");
         var subject = document.getElementById("subject");
         var describe = document.getElementById("describe");
 
-       
+        
         var modalname = document.getElementById("modal-name");
         var modalemai = document.getElementById("modal-email");
         var modalsubject = document.getElementById("modal-subject");
         var modaldescribe = document.getElementById("modal-describe");
 
-        modalname.innerHTML("<p>"+name.innerText+"</p>");
-        modalemai.innerHTML("<p>"+email.innerText+"</p>");
+        modalname.innerHTML = "<p>"+name.value+"</p>";
+        modalemai.innerHTML = "<p>"+email.value+"</p>";
+        if(subject.value)
+        modalsubject.innerHTML = "<p>"+subject.value+"</p>";
+        if(describe.value)
+        modaldescribe.innerHTML = "<p>"+describe.value+"</p>";
+
+        this.document.getElementsByClassName("modal-view")[0].classList.remove("none");
+        
+        
+    });
+
+    this.document.getElementById("close-btn").addEventListener('click', (event) => {
+        this.document.getElementsByClassName("modal-view")[0].classList.add("none");
     });
 
 });
