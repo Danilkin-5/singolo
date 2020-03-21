@@ -69,8 +69,12 @@ window.addEventListener("load", function(event) {
             modalemai.innerHTML = "<p>"+email.value+"</p>";
             if(subject.value)
             modalsubject.innerHTML = "<p>"+subject.value+"</p>";
+            else 
+            modalsubject.innerHTML = "<p>Без темы</p>";
             if(describe.value)
             modaldescribe.innerHTML = "<p>"+describe.value+"</p>";
+            else 
+            modaldescribe.innerHTML = "<p>Без описания</p>";
     
             this.document.getElementsByClassName("modal-view")[0].classList.remove("none");
             this.document.getElementsByClassName('shadow')[0].classList.remove("none");
