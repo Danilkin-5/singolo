@@ -79,6 +79,11 @@ window.addEventListener("load", function(event) {
         this.document.getElementsByClassName("modal-view")[0].classList.add("none");
     });
 
+    this.document.getElementsByClassName("burger")[0].addEventListener('click', (event) => {
+        event.target.classList.toggle("rotate");
+        this.document.getElementsByTagName("nav").style.cssText = "inline-block !important";
+    });
+
 });
 
 
