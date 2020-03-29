@@ -88,6 +88,11 @@ window.addEventListener("load", function(event) {
         document.getElementById('contact-form').reset();
     });
 
+    this.document.getElementsByClassName("burger")[0].addEventListener('click', (event) => {
+        event.target.classList.toggle("rotate");
+        this.document.getElementsByTagName("nav").style.cssText = "inline-block !important";
+    });
+
 });
 
 

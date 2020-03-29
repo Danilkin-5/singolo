@@ -1,6 +1,5 @@
 body {
-    max-width: 1020px;
-    min-width: 1020px;
+    width: 1020px;
     margin: 0 auto;
 }
 
@@ -16,7 +15,7 @@ header.fixed {
     position: fixed;
     top: 0px;
     z-index: 2;
-    width: 1020px !important;
+    width: 1020px;
 }
 
 #logo,
@@ -60,7 +59,7 @@ nav {
 nav ul {
     padding: 0px;
     margin-right: 40px;
-    margin-left: 450px;
+    margin-left: 445px;
 }
 
 nav ul li {
@@ -141,7 +140,7 @@ nav ul a li:hover {
     position: relative !important;
 }
 
-.left-darked .left-phone-dark {
+/*.left-darked .left-phone-dark {
     width: 188px;
     height: 333px;
     position: absolute;
@@ -157,7 +156,7 @@ nav ul a li:hover {
     top: 14px;
     left: 60px;
     background-color: rgba(0, 0, 0, 0.95);
-}
+}*/
 
 .right-phone {
     background-image: url("assets/shadow-horizontal.png");
@@ -715,9 +714,383 @@ footer .social-links {
     z-index: 4;
 }
 
-.shadow {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(211, 211, 211, .7);
-    z-index:3;
+@media only all and (max-width: 1020px) and (min-width: 768px) {
+    body {
+        width: auto;
+        overflow-x: hidden;
+    }
+
+    header {
+        display: inline-flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+
+    header.fixed {
+        width: 100% !important;
+    }
+
+    #articles-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding-left: 40px;
+    }
+
+    nav ul {
+        margin-left: 0px;
+    }
+
+    #container-images {
+        padding-top: 18px;
+        grid-template-columns: repeat(3, 30%);
+        grid-template-rows: repeat(4, auto);
+        padding-bottom: 65.5px;
+    }  
+
+    #container-first-level {
+        height: auto;
+    }
+    
+    #container-images img {
+        height: 100%;
+        width: 100%;
+    }  
+
+    #container-images .img {
+        overflow: hidden;
+    }  
+
+    #main-phone {
+        height: auto;
+        width: 100%;        
+    }
+
+    .left-phone {
+        height: auto;
+        width: 22%;
+        margin-top: 60px;
+        margin-bottom: 80px;
+        padding: 0;
+        border-radius: 20px;
+    }
+
+    .right-phone {
+        height: auto;
+        width: 50%;
+        margin-top: 60px;
+        margin-bottom: 80px;
+        padding: 0;
+        border-radius: 20px;
+    }
+
+    .left-phone img,
+    .right-phone img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #articales {
+        height: auto;
+        width: 100%;
+    }
+
+    .our-services {
+        width: auto;
+        height: auto;
+    }
+
+    .bottom-line-header,
+    .bottom-line-phone {
+        width: 100%;
+    }
+
+    #container-first-level>p:nth-of-type(2), #container-second-level>p:nth-of-type(2) {
+        width: auto;
+        height: auto;
+        padding-right: 40px;
+    }
+
+    #get-quote-text {
+        width: auto;
+        height: auto;
+        padding-right: 40px;
+    }
+
+    .data-block {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .contact-info .text-info {
+        width: auto;
+        height: auto;
+        padding-right: 37px;
+    }
+
+    .form {
+        height: auto;
+    }
+
+    .our-services p {
+        padding-right: 40px;
+    }
+
+    #container-about-us {
+        padding-left: 40px;
+        padding-right: 40px;
+        grid-template-columns: repeat(3, 32%);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .text .bio-description {
+        width: auto;
+        height: auto;
+        text-align: justify;
+    }
+
+    #container-about-us .bio {
+        height: auto;
+        background: none;        
+        overflow: hidden;
+    }
+
+    .bio img {
+        width: 100%;
+    }
+
+    #form form > * {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #form form>input[name="describe"] {
+        padding-top: 20px;
+    }
+
+    #form form>input[type="submit"] {
+        margin-bottom: 50px;
+    }
+
+    footer .social-links {
+        margin-right: 40px;
+        direction: rtl;
+        padding-left: 0px;
+    }
+
+    .footer {
+        grid-template-columns: 76% 24%;
+    }
 }
+
+@media only all and (max-width: 768px) and (min-width: 375px) {
+    body {
+        width: auto;
+        overflow-x: hidden;
+    }
+
+    header {
+        display: inline-flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    header.fixed {
+        width: 100% !important;
+    }
+
+    #articles-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        padding-left: 43px;
+        padding-top: 25px;
+    }
+
+    #articles-list article {
+        justify-content: center;
+    }
+
+    nav ul {
+        margin-left: 0px;
+    }
+
+    #container-images {
+        padding-top: 18px;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(6, auto);
+        padding-bottom: 65.5px;
+    }  
+
+    #container-first-level {
+        height: auto;
+    }
+    
+    #container-images img {
+        height: 100%;
+        width: 100%;
+    }  
+
+    #container-images .img {
+        overflow: hidden;
+    }  
+
+    #main-phone {
+        height: auto;
+        width: 100%;        
+    }
+
+    .left-phone {
+        height: auto;
+        width: 22%;
+        margin-top: 60px;
+        margin-bottom: 80px;
+        padding: 0;
+        border-radius: 20px;
+    }
+
+    .right-phone {
+        height: auto;
+        width: 50%;
+        margin-top: 60px;
+        margin-bottom: 80px;
+        padding: 0;
+        border-radius: 20px;
+    }
+
+    .left-phone img,
+    .right-phone img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #articales {
+        height: auto;
+        width: 100%;
+    }
+
+    .our-services {
+        width: auto;
+        height: auto;
+    }
+
+    .bottom-line-header,
+    .bottom-line-phone {
+        width: 100%;
+    }
+
+    #container-first-level>p:nth-of-type(2), #container-second-level>p:nth-of-type(2) {
+        width: auto;
+        height: auto;
+        padding-right: 40px;
+    }
+
+    #get-quote-text {
+        width: auto;
+        height: auto;
+        padding-right: 40px;
+    }
+
+    .data-block {
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+        padding-right: 40px;
+    }
+
+    .contact-info .text-info {
+        width: auto;
+        height: auto;
+        padding-right: 37px;
+    }
+
+    .form {
+        height: auto;
+    }
+
+    .our-services p {
+        padding-right: 40px;
+    }
+
+    #container-about-us {
+        padding-left: 40px;
+        padding-right: 40px;
+        grid-template-columns: repeat(3, 32%);
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .text .bio-description {
+        width: auto;
+        height: auto;
+        text-align: justify;
+    }
+
+    #container-about-us .bio {
+        height: auto;
+        background: none;        
+        overflow: hidden;
+    }
+
+    .bio img {
+        width: 100%;
+    }
+
+    #form form > * {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #form form>input[name="describe"] {
+        padding-top: 20px;
+    }
+
+    #form form>input[type="submit"] {
+        height: 50px;
+        width: 100%;
+        margin-bottom: 32px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    footer .social-links {
+        text-align: center;
+    }
+
+    .footer {
+        display: block;
+    }
+
+    .contacts {
+        padding-top: 0px;
+    }
+
+    #copyright {
+        display: none;
+    }
+
+    #bottom-line {
+        margin-bottom: -3px;
+    }
+
+    .burger {
+        width: 25px;
+        height: 20px;
+        background: url(assets/burger.png);
+        margin-top: 26px;
+        top: 10px;
+        left: 26px;
+        position: absolute;
+    }
+
+    .burger.rotate {
+        transform: rotateZ(90deg);
+    }
+
+    header>nav {
+        display: none;
+    }
+
+    .shadow {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(211, 211, 211, .7);
+        z-index:3;
+    }
