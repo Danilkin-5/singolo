@@ -229,12 +229,12 @@
             </div>
             <div class="data-block">
                 <div id="form">
-                    <form action="" method="">
-                        <input type="text" id="name" name="name" value="Name (Required)" placeholder="Name (Required)" pattern="[-a-z0-9!#$%&'*+/=?^_`{|}~]+(\.[-a-z0-9!#$%&'*+/=?^_`{|}~]+)*" required>
-                        <input type="email" id="email" name="email" value="Email (Required)" placeholder="Email (Required)" pattern="^[-a-z0-9!#$%&'*+/=?^_`{|}~]+(?:\.[-a-z0-9!#$%&'*+/=?^_`{|}~]+)*@(?:[a-z0-9]([-a-z0-9]{0,61}[a-z0-9])?\.)*(?:aero|arpa|asia|biz|cat|com|coop|edu|gov|info|int|jobs|mil|mobi|museum|name|net|org|pro|tel|travel|[a-z][a-z])$" required >
+                    <form action="" method="" id="contact-form">
+                        <input type="text" id="name" name="name" value="Name (Required)" placeholder="Name (Required)" pattern="[-A-Z-a-z0-9!#$%&'*+/=?^_`{|}~]+(\.[-A-Z-a-z0-9!#$%&'*+/=?^_`{|}~]+)*" required>
+                        <input type="email" id="email" name="email" value="Email (Required)"  placeholder="Email (Required)" pattern="^([A-Za-z0-9_-]+\.)*[A-Za-z0-9_-]+@[A-Za-z0-9_-]+(\.[A-Za-z0-9_-]+)*\.[a-z]{2,6}$" required >
                         <input type="text"  id="subject" name="subject" value="Subject" placeholder="Subject">
                         <input type="text" id="describe" name="describe" value="Describe your project in detail..." placeholder="Describe your project in detail...">
-                        <input type="submit" value="Submit" placeholder="Submit" id="submit">
+                        <input type="submit" value="Submit" placeholder="Submit" id="submit" >
                     </form>
                 </div>
                 <div class="contacts">
@@ -272,10 +272,11 @@
         <p>Письмо отправлено</p>
         <div id="modal-name"><p></p></div>
         <div id="modal-email"><p></p></div>
-        <div id="modal-subject"><p>Без темы</p></div>
-        <div id="modal-describe"><p>Без описания</p></div>
+        <div id="modal-subject"><p></p></div>
+        <div id="modal-describe"><p></p></div>
         <div id="close-btn" style="width: 50px;height:50px;border: 1px solid white"><p>OK</p></div>
     </div>
+    <div class="shadow none"></div>
     <footer>
         <div class="footer">
             <p id="copyright">&copy; Copyright 2013</p>

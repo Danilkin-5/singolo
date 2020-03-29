@@ -49,8 +49,7 @@ window.addEventListener("load", function(event) {
         });
     });
 
-    this.document.getElementById("submit").addEventListener("click",(event) => {
-        event.stopPropagation();
+   this.document.getElementById("submit").addEventListener("click",(event) => {
         event.preventDefault();
         var name = document.getElementById("name");
         var email = document.getElementById("email");
@@ -63,20 +62,30 @@ window.addEventListener("load", function(event) {
         var modalsubject = document.getElementById("modal-subject");
         var modaldescribe = document.getElementById("modal-describe");
 
-        modalname.innerHTML = "<p>"+name.value+"</p>";
-        modalemai.innerHTML = "<p>"+email.value+"</p>";
-        if(subject.value)
-        modalsubject.innerHTML = "<p>"+subject.value+"</p>";
-        if(describe.value)
-        modaldescribe.innerHTML = "<p>"+describe.value+"</p>";
-
-        this.document.getElementsByClassName("modal-view")[0].classList.remove("none");
-        
-        
+        if(!email.checkValidity())  alert("Email does not satisfy the main email rules.");
+        if(!name.checkValidity()) alert("Name does not satisfy the main user name rules.");
+        else if(email.checkValidity() && name.checkValidity()) {            
+            modalname.innerHTML = "<p>"+name.value+"</p>";
+            modalemai.innerHTML = "<p>"+email.value+"</p>";
+            if(subject.value)
+            modalsubject.innerHTML = "<p>"+subject.value+"</p>";
+            else 
+            modalsubject.innerHTML = "<p>Без темы</p>";
+            if(describe.value)
+            modaldescribe.innerHTML = "<p>"+describe.value+"</p>";
+            else 
+            modaldescribe.innerHTML = "<p>Без описания</p>";
+    
+            this.document.getElementsByClassName("modal-view")[0].classList.remove("none");
+            this.document.getElementsByClassName('shadow')[0].classList.remove("none");
+        }              
     });
 
     this.document.getElementById("close-btn").addEventListener('click', (event) => {
         this.document.getElementsByClassName("modal-view")[0].classList.add("none");
+        this.document.getElementsByClassName("shadow")[0].classList.add("none");
+
+        document.getElementById('contact-form').reset();
     });
 
     this.document.getElementsByClassName("burger")[0].addEventListener('click', (event) => {

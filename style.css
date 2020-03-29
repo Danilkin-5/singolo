@@ -695,18 +695,23 @@ footer .social-links {
     height: 100%;
 }
 
-.modal-view {
-    height: 70%;
-    width: 80%;
+.modal-view,
+.shadow  {    
     position: fixed;    
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
-    margin: auto;
+    margin: auto;    
+}
+
+.modal-view {
+    height: 70%;
+    width: 80%;
     background-color: #666d89;
     color: #dedede;
     border: 1px solid black;
+    z-index: 4;
 }
 
 @media only all and (max-width: 1020px) and (min-width: 768px) {
@@ -1082,4 +1087,10 @@ footer .social-links {
     header>nav {
         display: none;
     }
-}
+
+    .shadow {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(211, 211, 211, .7);
+        z-index:3;
+    }
